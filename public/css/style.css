@@ -1,0 +1,53 @@
+html{
+    background-color: white;
+    background-image: url(/img/blue-snow.png);
+    height: 100%;
+}
+body{
+    width: 960px;
+    height:100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    height: 100px;
+    width: 100%;
+    margin:2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main{
+    flex: 1 0 auto;
+}
+footer{
+    font-family: 'Titillium Web', sans-serif;
+    flex-shrink: 0;
+    height: 2rem;
+}
+.play{
+    margin: 0 auto;
+    font-size: 8rem;
+    font-family: 'Bangers', cursive;
+    color:white;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+.navigatie{
+    display: flex;
+    flex-direction: rows;
+    justify-content: end;
+    font-family: 'Bangers', cursive;
+}
+.navItem{
+    list-style: none;
+    padding: 1rem;
+    margin-left: 2rem;
+    font-size: 2rem;
+    color:#0b4bb3;
+}
