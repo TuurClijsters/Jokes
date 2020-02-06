@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <main>
+    <div class="main">
         <div class='main-text'>
 
             <div class='play'>
@@ -28,5 +28,5 @@
             </div>
         </div>
     
-    </main>
+</div>
 @endsection
