@@ -3,12 +3,13 @@
 }
 html{
     /* background-color: #D9D9D9; */
-    background-image: url("/img/dot-grid.png");
+    background-image: url("/img/dot-grid.png");;
     height: 100%;
 }
 body{
     display: grid;
     grid-template-columns: 1fr;
+    overflow-x: hidden;
 }
 header{
     display: grid;
