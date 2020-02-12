@@ -16,6 +16,10 @@
 #bridgeContainer { 
   text-align: center;
   font-family: Avenir, sans-serif;
+  position: relative;
+  width: 70%;
+	max-width: 750px;
+  margin: 0 auto;
 }
 #bridgeContainer figcaption {   
   margin-top: 2rem; 
