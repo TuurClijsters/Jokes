@@ -3,7 +3,7 @@ bridgeCanvas = bridge.getContext('2d'),
 brushRadius = (bridge.width / 100) * 5,
 img = new Image();
 
-if (brushRadius < 80) { brushRadius = 80 }
+if (brushRadius < 50) { brushRadius = 50 }
 
 img.onload = function(){  
 	bridgeCanvas.drawImage(img, 0, 0, bridge.width, bridge.height);
@@ -14,7 +14,7 @@ if (window.devicePixelRatio >= 2) {
 	var nameParts = img.filename.split('.');
 	img.src = img.loc + nameParts[0]+"-2x"+"."+nameParts[1];
 } else {
-	img.src = '/img/chalkboard.jpg';
+	img.src = '/img/chalkboard-slider.jpg';
 }
 
 function detectLeftButton(event) {

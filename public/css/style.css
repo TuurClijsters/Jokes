@@ -32,33 +32,6 @@ header{
     grid-template-rows:85vh;
     margin-top: 5vh;
 }
-.grapcontainer{
-    width: 100%;
-	max-width: 750px;
-    height:100%;
-    background-color: rgba(247,78,46,0.8);
-    background-color: rgb(247,78,46);
-    position: absolute;
-    top:0;
-    left:0;
-    z-index: -1;
-    margin: 0 auto;   
-}
-.grap{
-    padding: 10%;
-    color:white;
-    height: 3rem;
-    line-height:3rem;
-    font-size: 1.5rem;
-    text-align: center;
-    font-family: 'Lacquer', sans-serif;
-}
-.main2{
-    display: grid;
-    /* grid-template-columns:1fr 1.5fr; */
-    grid-template-rows:85vh;
-    margin-top: 5vh;
-}
 .main-img{
     position: relative;
 }

@@ -1,15 +1,18 @@
 
 
 #bridge {
+
 	display: block;
-    margin: 0 auto;
+  /* margin: 0 auto; */
     /* background-image: url('/img/cat.jfif'); */
     /* background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/calgary-bridge-1943.jpg'); */
 	/* background-image: -webkit-image-set(url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/calgary-bridge-1943.jpg') 1x, url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/calgary-bridge-1943-2x.jpg') 2x ); */
 	/* background-size: cover; */
-	width: 100%;
-	max-width: 750px;
-	height: auto;
+  width: 100%;
+  height:100%;
+  max-height:300px;
+	/* max-width: 750px; */
+	/* height: auto; */
     cursor:  crosshair;
     /* cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/circular-cursor.png) 53 53, crosshair; */
 }
@@ -17,10 +20,84 @@
   text-align: center;
   font-family: Avenir, sans-serif;
   position: relative;
-  width: 70%;
-	max-width: 750px;
+  width: 100%;
+  height:100%;
+  max-height:300px;
+	/* max-width: 750px; */
   margin: 0 auto;
+  background-size: cover;
 }
 #bridgeContainer figcaption {   
-  margin-top: 2rem; 
+  margin-top: 2rem;
+  /* background-size: cover; */
+}
+.grapcontainer{
+  width: 100%;
+  height:100%;
+  background-color: rgba(247,78,46,0.9);
+  /* background-color: rgb(247,78,46); */
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: -1;
+  margin: 0 auto;   
+}
+.grap{
+  padding: 5% 20%;
+  color:white;
+  height: 3rem;
+  line-height:2.4rem;
+  font-size: 1.3rem;
+  text-align: center;
+  font-family: 'Lacquer', sans-serif;
+}
+.main2{
+  display: grid;
+  /* grid-template-columns:1fr 1.5fr; */
+  grid-template-columns:10% 30% 50% 10%;
+  grid-template-rows: 20vh 70vh;
+  margin-top: 10vh;
+}
+.main2 h1{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:2rem;
+}
+.item-a {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: row1-start;
+  grid-row-end: 2;
+}
+.item-b {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: row1-start;
+  grid-row-end: 2;
+}
+.button2container{
+
+}
+.button2{
+  background-color: rgb(247,78,46);
+  /* color:rgb(247,78,46); */
+  color: black;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  border:solid 2px black;
+  width: 70%;
+}
+.man{
+  background-image: url("/img/man2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  max-height: 400px;
+  position: absolute;
+  top:-100px;
+  left:0;
+  z-index: -50;
 }
