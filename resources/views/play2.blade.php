@@ -5,7 +5,7 @@
     <div class="main3">
         <div class="leftmain">
             <h1>REVEAL ME!</h1>
-            <h2>Wipe the panel to see the joke.</h2>
+            <h2>Erase the panel to see the joke. &rarr;</h2>
             <a href="/play2"><div class="button2">Another one!</div></a>
         </div>
 

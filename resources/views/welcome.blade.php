@@ -21,7 +21,7 @@
         </div>
         <div class='main-img'>
             <div class='colour-box'>
-                <a href="/play"><div class="button"></div></a>
+                <a href="/play2"><div class="button"></div></a>
             </div>
             <div class='granny'>
                 <!-- <img src="/img/woman3.png" alt="LOGO" > -->

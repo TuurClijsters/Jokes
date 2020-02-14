@@ -16,8 +16,8 @@
     /* max-height:300px; */
     /* max-width: 750px; */
     /* height: auto; */
-    cursor:  crosshair;
-    /* cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/circular-cursor.png) 53 53, crosshair; */
+    /* cursor:  crosshair; */
+    cursor: url(/img/gum.png),auto;
 }
 #bridgeContainer { 
   text-align: center;
@@ -63,10 +63,10 @@
     margin: 0;
 }
 .button2{
-    background-color: rgba(247,78,46,0.9);
+     background-color: rgba(00,00,00,0.9);
     /* color:rgb(247,78,46); */
-    color: black;
-    padding: 10px;
+    color: rgba(247,78,46,0.9);
+    padding: 30px 10px;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
