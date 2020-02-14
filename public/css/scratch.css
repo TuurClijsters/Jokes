@@ -96,6 +96,7 @@
   font-weight: bold;
   border:solid 2px black;
   width: 70%;
+  margin-top: 50px;
 }
 .man{
   background-image: url("/img/man2.png");
