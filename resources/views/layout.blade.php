@@ -8,7 +8,8 @@
         <link href="/css/normalize.css" rel="stylesheet" />
         <link href="/css/style.css" rel="stylesheet" />
         <link href="/css/nav.css" rel="stylesheet" />
-        <link href="/css/scratch.css" rel="stylesheet" />
+        <!-- <link href="/css/scratch.css" rel="stylesheet" /> -->
+        <link href="/css/play2.css" rel="stylesheet" />
 
         <!-- FONTS -->
         <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">

@@ -12,7 +12,7 @@ class JokesController extends Controller
         // $jokes =Joke::latest()->get();
         $joke = Joke::all()->random(1);
 
-        return view ('play',['joke' => $joke]);
+        return view ('play2',['joke' => $joke]);
     }
 
     // public function show(Joke $joke){

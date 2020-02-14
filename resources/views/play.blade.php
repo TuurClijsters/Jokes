@@ -6,18 +6,18 @@
         <div></div>
         <div>
             <h1>REVEAL ME!</h1>
-            <p>Wipe the chalkboard to see the joke.</p>
         </div>
         <div>
            
         </div>
         <div></div>
         <div></div>
-        <div class="woman item-b">
+        <div>
         </div>
         <div>
         <div class='button2container'>
-                <a href="/play"><div class="button2">Another one!</div></a>
+                <h2>Wipe the chalkboard to see the joke.</h2>
+                <a href="/play2"><div class="button2">Another one!</div></a>
             </div>
         </div>
         <figure id="bridgeContainer" class="item-a">

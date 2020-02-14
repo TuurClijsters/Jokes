@@ -42,7 +42,7 @@ header{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 50% 50%;
-    margin-left: 10%;
+    margin-left: 15%;
 }
 .colour-box{
     background-color: rgba(247,78,46,0.8);

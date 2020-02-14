@@ -19,4 +19,4 @@ Route::get('/', function () {
 //     return view('play');
 // });
 
-Route::get('/play','JokesController@index');
+Route::get('/play2','JokesController@index');

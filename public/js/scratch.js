@@ -1,21 +1,22 @@
-var bridge = document.getElementById("bridge"),
-bridgeCanvas = bridge.getContext('2d'),
-brushRadius = (bridge.width / 100) * 5,
-img = new Image();
+// var bridge = document.getElementById("bridge"),
+// bridgeCanvas = bridge.getContext('2d'),
+// brushRadius = (bridge.width / 100) * 5,
+// img = new Image();
+// img.src = '/img/black2.jpg';
+// img.src = '/img/chalkboard-slider.jpg';
+
+var c = document.getElementById("bridge");
+var ctx = c.getContext("2d");
+c.width = 1000;
+c.height = 1000;
+ctx.fillStyle = "#F74E10";
+ctx.fillRect(0, 0, 1000, 1000);
+
+var brushRadius = (bridge.width / 100) * 5
+
 
 if (brushRadius < 50) { brushRadius = 50 }
 
-img.onload = function(){  
-	bridgeCanvas.drawImage(img, 0, 0, bridge.width, bridge.height);
-}
-// img.loc = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/';
-// img.filename = 'calgary-bridge-2013.jpg';
-if (window.devicePixelRatio >= 2) {
-	var nameParts = img.filename.split('.');
-	img.src = img.loc + nameParts[0]+"-2x"+"."+nameParts[1];
-} else {
-	img.src = '/img/chalkboard-slider.jpg';
-}
 
 function detectLeftButton(event) {
     if ('buttons' in event) {
@@ -28,7 +29,7 @@ function detectLeftButton(event) {
 }
 
 function getBrushPos(xRef, yRef) {
-	var bridgeRect = bridge.getBoundingClientRect();
+	var bridgeRect = c.getBoundingClientRect();
     return {
 	  x: Math.floor((xRef-bridgeRect.left)/(bridgeRect.right-bridgeRect.left)*bridge.width),
 	  y: Math.floor((yRef-bridgeRect.top)/(bridgeRect.bottom-bridgeRect.top)*bridge.height)
@@ -36,14 +37,15 @@ function getBrushPos(xRef, yRef) {
 }
       
 function drawDot(mouseX,mouseY){
-	bridgeCanvas.beginPath();
-    bridgeCanvas.arc(mouseX, mouseY, brushRadius, 0, 2*Math.PI, true);
-    bridgeCanvas.fillStyle = '#000';
-    bridgeCanvas.globalCompositeOperation = "destination-out";
-    bridgeCanvas.fill();
+    ctx.beginPath();
+    // ctx.arc(mouseX, mouseY, 50, 0, 2 * Math.PI);
+    ctx.arc(mouseX, mouseY, 100, 0, 2*Math.PI, true);
+    ctx.fillStyle = '#000';
+    ctx.globalCompositeOperation = "destination-out";
+    ctx.fill();
 }
 
-bridge.addEventListener("mousemove", function(e) {
+c.addEventListener("mousemove", function(e) {
 	var brushPos = getBrushPos(e.clientX, e.clientY);
   var leftBut = detectLeftButton(e);
   if (leftBut == 1) {
@@ -51,7 +53,7 @@ bridge.addEventListener("mousemove", function(e) {
   }
 }, false);
 
-bridge.addEventListener("touchmove", function(e) {
+c.addEventListener("touchmove", function(e) {
     e.preventDefault();
     var touch = e.targetTouches[0];
     if (touch) {
