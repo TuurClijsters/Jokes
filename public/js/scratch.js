@@ -5,10 +5,14 @@
 // img.src = '/img/black2.jpg';
 // img.src = '/img/chalkboard-slider.jpg';
 
+
+
 var c = document.getElementById("bridge");
 var ctx = c.getContext("2d");
-c.width = 1000;
-c.height = 1000;
+// ctx.style.height =800;
+// ctx.style.width =800;
+// c.width = 80%;
+// c.height = 80%;
 ctx.fillStyle = "#F74E10";
 ctx.fillRect(0, 0, 1000, 1000);
 

@@ -1,6 +1,13 @@
 input {
     display: none !important; 
 }
+#menuArea{
+  padding: 20px 20px 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+}
   .open {
     background-color: #3c3c3c;
     width: 24px;
@@ -47,7 +54,7 @@ input {
     padding: 15px;
     cursor: pointer;
     float: right;
-    z-index: 15;
+    z-index: 16;
   }
   
   .menuOpen:hover .open:before {
@@ -64,7 +71,10 @@ input {
     height: 100vh;
     top: 0;
     left: 0;
-    background: rgba(255, 135, 2, 0.9);
+    /* background: rgb(100,255,183);
+    background: radial-gradient(circle, rgba(100,255,183,1) 0%, rgba(247,78,46,1) 100%); */
+    background: black;
+    /* background: rgba(255, 135, 2, 0.9); */
     z-index: 15;
   }
   
@@ -72,8 +82,8 @@ input {
     width: 30px;
     height: 30px;
     position: absolute;
-    right: 20px;
-    top: 20px;
+    right: 100px;
+    top: 25px;
     background-size: 100%;
     cursor: pointer;
   }
@@ -158,4 +168,25 @@ input {
   
   #menuToggle:not(:checked) ~ .menuEffects ul {
     transform: translateY(-30%);
+  }
+
+  .profile {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(247,78,46);
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+    
+  }
+  #login{
+    background-image: url("/img/login-icon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top:0;
+    left:0;
   }

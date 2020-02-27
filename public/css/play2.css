@@ -1,3 +1,6 @@
+a{
+    text-decoration: none;
+}
 .main3{
     display: grid;
     grid-template-columns:1fr 1.5fr;
@@ -57,20 +60,20 @@
 }
 .leftmain{
     margin-left:15%;
+    width: 70%;
 }
 .leftmain h1{
     font-size: 4rem;
-    margin: 0;
+    /* overflow: hidden; */
+    /* margin: 0; */
 }
 .button2{
      background-color: rgba(00,00,00,0.9);
-    /* color:rgb(247,78,46); */
     color: rgba(247,78,46,0.9);
     padding: 30px 10px;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-    /* border:solid 2px black; */
     width: 70%;
     margin-top: 50px;
     border-radius: 10px;

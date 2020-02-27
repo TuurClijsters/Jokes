@@ -6,7 +6,11 @@
         <div class='main-text'>
 
             <div class='play'>
-                JOKE.
+                @if (Auth::check())
+                    Hey, {{ Auth::user()->name}}
+                @else
+                    JOKE
+                @endif
             </div>
             <div class='text'>
                 <div class='text1'>

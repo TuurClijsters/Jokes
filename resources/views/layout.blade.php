@@ -29,23 +29,28 @@
             <div></div>
 
             <div id="menuArea">
-            <input type="checkbox" id="menuToggle"></input>
+                <input type="checkbox" id="menuToggle"></input>
 
-            <label for="menuToggle" class="menuOpen">
-            <div class="open"></div>
-            </label>
+                <label for="menuToggle" class="menuOpen">
+                <div class="open"></div>
+                </label>
 
-            <div class="menu menuEffects">
-            <label for="menuToggle"></label>
-            <div class="menuContent">
-                <ul>
-                <li><a href="#">MENU 1</a></li>
-                <li><a href="#">MENU 2</a></li>
-                <li><a href="#">MENU 3</a></li>
-                <li><a href="#">MENU 4</a></li>
-                </ul>
-            </div>
-            </div>
+                <div class="menu menuEffects">
+                <label for="menuToggle"></label>
+                    <div class="menuContent">
+                        <ul>
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="/play2">JOKE GENERATOR</a></li>
+                        <li><a href="#">MENU 3</a></li>
+                        <li><a href="#">MENU 4</a></li>
+                        </ul>
+                </div>
+                </div>
+                <a href="/login">
+                    <div class="profile">
+                        <div id ="login"></div>
+                    </div>
+                </div></a>
             </div>
 
         </header>
