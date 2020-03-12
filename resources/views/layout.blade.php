@@ -11,12 +11,15 @@
         <!-- <link href="/css/scratch.css" rel="stylesheet" /> -->
         <link href="/css/play2.css" rel="stylesheet" />
         <link href="/css/menu.css" rel="stylesheet" />
+        <link href="/css/form.css" rel="stylesheet" />
 
         <!-- FONTS -->
         <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        
 
 
     </head>

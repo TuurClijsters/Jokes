@@ -17,6 +17,8 @@ header{
     display: grid;
     grid-template-columns:1fr 2fr 2fr;
     grid-template-rows:10vh;
+    width: 100vw;
+    max-width: 100%;
 }
 .logo{
     width:100%;
