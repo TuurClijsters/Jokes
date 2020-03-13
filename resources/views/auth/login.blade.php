@@ -3,18 +3,16 @@
 @section('content')
 <div id="formcontainer">
 
-    <div id="left-form">
+    <div id="left_form">
 
         <div id="titel-form">Sign In</div>
         <div id="form">
-
                 <form method ='POST' action ="{{ route('login') }}" id="form">
                     @csrf
 
                     <div class="row">
-                        <label for ="email">{{ __('E-Mail Address') }}</label>
-                        <input type ="email" id="email" class="" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-
+                        <input type ="email" id="email" class="form_field" name="email" placeholder="EMail" value="{{ old('email') }}" required autocomplete="email">
+                        <label for ="email" class="labelStyle">{{ __('E-Mail') }}</label>
                         @error('email')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -23,9 +21,8 @@
                     </div>
                     
                     <div class="row">
-                        <label for="password" class="">{{ __('Password') }}</label>
-                        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
-
+                        <input id="password" type="password" class="form_field @error('password') is-invalid @enderror" name="password" placeholder="Password" required autocomplete="current-password">
+                        <label for="password" class="labelStyle">{{ __('Password') }}</label>
                         @error('password')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -33,13 +30,24 @@
                         @enderror
                     </div>
 
+                    <div class="">
+                        <button type="submit" class="btn">Log in</button>
+                        <!-- <input type="button" class="btn" value="Log In"> -->
+                        @if (Route::has('password.request'))
+                            <!-- <a class="btn btn-link" href="{{ route('password.request') }}">
+                                {{ __('Forgot Your Password?') }}
+                            </a> -->
+                        @endif
+                    </div>
+
+
                 </form>
         </div>
     </div>
 
 
 
-    <div id="right-form">
+    <div id="right_form">
         Lalala
     </div>
 </div>
